@@ -71,7 +71,10 @@ public class ShareholderClient extends Actor implements iReturnOrder{
     public Actor getActor() {
         return this;
     }
-
+    /**
+     * Метод, описывающий возращение товара
+     * в виде логического значение на основе случайного числа (0 || 1)
+     */
     public boolean returnOrder() {
         Random rand = new Random();
         return (rand.nextInt(2) == 1) ? true : false;
